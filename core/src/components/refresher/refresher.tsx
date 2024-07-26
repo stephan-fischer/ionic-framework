@@ -698,7 +698,8 @@ export class Refresher implements ComponentInterface {
     }
   }
 
-  private beginRefresh() {
+  @Method()
+  beginRefresh() {
     // assumes we're already back in a zone
     // they pulled down far enough, so it's ready to refresh
     this.state = RefresherState.Refreshing;

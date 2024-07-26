@@ -2178,6 +2178,7 @@ export namespace Components {
         "value": RangeValue;
     }
     interface IonRefresher {
+        "beginRefresh": () => Promise<void>;
         /**
           * Changes the refresher's state from `refreshing` to `cancelling`.
          */
